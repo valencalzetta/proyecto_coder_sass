@@ -1,3 +1,12 @@
-p {
-    color: blue;
-}
+@import "variables";
+@import "body";
+@import "nav";
+@import "header";
+@import "btn";
+@import "footer";
+@import "main-index";
+@import "main-busqueda";
+@import "main-mundo";
+@import "main-nosotros";
+@import "main-preguntas-frecuentes";
+

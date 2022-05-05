@@ -1,0 +1,14 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    line-height: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+.resaltado {
+    color: rgb(160, 8, 8);
+    font-size: $font-size*2;
+}

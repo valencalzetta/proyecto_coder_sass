@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  line-height: 22px;
+  font-family: 'Montserrat', sans-serif; }
+
+.resaltado {
+  color: #a00808;
+  font-size: 20px; }
+
+nav {
+  background-color: #d4d4d4;
+  text-align: center;
+  padding-bottom: 10px; }
+  nav img {
+    height: 50px; }
+
+@media screen and (min-width: 769px) {
+  nav {
+    height: 50px; } }

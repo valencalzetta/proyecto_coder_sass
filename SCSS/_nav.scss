@@ -1,0 +1,14 @@
+nav {
+    background-color: $color-blanco-oscuro;
+    text-align: center;
+    padding-bottom: $spacing;
+    img {
+        height: $spacing*5;
+    }
+}
+
+@media screen and (min-width: 769px) {
+  nav {
+      height: $spacing*5;
+  }  
+}
