@@ -1,0 +1,23 @@
+{
+  "name": "proyecto_coder_sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valencalzetta/proyecto_coder_sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valencalzetta/proyecto_coder_sass/issues"
+  },
+  "homepage": "https://github.com/valencalzetta/proyecto_coder_sass#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
