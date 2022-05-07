@@ -10,5 +10,13 @@ nav {
 @media screen and (min-width: 769px) {
   nav {
       height: $spacing*5;
+      #navbarNav {
+          justify-content: end !important;
+      }
+      .nav-link {
+          &:hover {
+            color: $color-bordo !important;
+          }
+      }
   }  
 }

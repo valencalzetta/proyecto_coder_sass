@@ -1,4 +1,57 @@
 header {
     text-align: center;
+    padding-bottom: 10px;
     background-color: $color-bordo;
+    h1 {
+        color: $color-negrito;
+        font-size: $font-size*1.5;
+        font-weight: 200;
+        margin-top: $spacing*5;
+        padding-top: $spacing*2; 
+        line-height: 25px;  
+    }
+    #titulo_index {
+        font-size: $font-size*2;
+        margin-bottom: $spacing*0.8;
+        padding-top: $spacing*2;
+    }
+    h4 {
+        color: rgb(36, 33, 33);
+        font-style: italic;
+        font-size: $font-size*0.8;
+        font-weight: 400;
+        padding-top: $spacing*0.2; 
+        padding-bottom: $spacing*0.5;     
+    }
+    img {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    header{
+        text-align: right;
+        padding-right: 15vh;
+        margin-top: $spacing*8;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 400;
+            padding: 10px;
+        }
+        #titulo_index {
+            font-size: 2.5rem;
+        }
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        img {
+            display: inline-block;
+            filter: brightness(60%);
+            width: 600px; 
+            height: 300px;
+        }
+    }
+    
 }
