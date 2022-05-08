@@ -163,3 +163,15 @@
         max-width: 50vw;
     }
 }
+
+@media screen and (max-width: 1124px)  {
+    .main_index {
+        .explicacion {
+            flex-direction: column;
+            img {
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+}

@@ -8063,3 +8063,9 @@ footer {
 @media screen and (min-width: 600px) {
   video {
     max-width: 50vw; } }
+
+@media screen and (max-width: 1124px) {
+  .main_index .explicacion {
+    flex-direction: column; }
+    .main_index .explicacion img {
+      margin-bottom: 15px; } }
