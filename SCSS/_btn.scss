@@ -1,0 +1,19 @@
+.btn {
+    color: black;
+    background-color: #7b2e2e;
+    margin-top: $spacing*0.3;
+    animation-name: animacion-1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+}
+
+@media screen  and (min-width: 769px){
+    .btn {
+        font-size: $font-size*1.5;
+        padding: 10px 10px 10px 10px;
+        border-style: ridge;
+        border-color: #7b2e2e;
+    }
+    
+}

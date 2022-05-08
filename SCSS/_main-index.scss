@@ -1,0 +1,165 @@
+.main_index {
+    display: grid;
+    grid-template-areas: 
+    "explicacion"
+    "cfns"
+    "comenzar_busqueda";
+    grid-row-gap: $spacing*10;
+
+    /* Seccion explicacion: elemento padre */
+    .explicacion {
+        grid-area: explicacion;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: $spacing*10;
+        padding: 10px 30px 10px 30px;
+        /* Imágen explicación (círculos): elemento hijo */
+        img {
+            max-width: fit-content;
+            height: 180px;
+            animation-name: animacion-1;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-duration: 5s;
+        }
+
+        @keyframes animacion-1 {
+            0% { 
+                transform: scale(1, 1)
+                
+            }
+            25% { 
+                transform: scale(.8, .8)
+            }
+            75% {
+                transform: scale(1, 1);
+            }
+            100% { 
+                transform: scale(.8, .8)
+            }
+        }
+
+        /* Texto explicación: elemento hijo */
+        p {
+            @include parrafo-centrado;
+            font-size: .8rem;
+        }
+    }
+
+    
+    /* Section: como funciona nuestra pagina */
+    .cfns {
+        grid-area: cfns;
+        text-align: center;
+        flex-direction: column;
+        background-color: #7b2e2e;
+        padding-top: 10px;
+        padding-bottom: 9px;
+
+        h2 {
+            font-weight: 350;
+            font-size: 1rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        video {
+            max-width: 80vw;
+        }
+    }
+
+    /* Section: comenzar busqueda */
+    .comenzar_busqueda {
+        grid-area: comenzar_busqueda;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: $spacing*10;
+
+        /* H2: estas listo */
+        h2 {
+            text-align: center;
+            margin-bottom: $spacing*0.2;
+            font-size: 1.2rem;
+            font-weight: 350;
+        }
+
+        /* H4: haz click aqui */
+        .h4_btn {
+            text-align: center;
+            font-size: .8rem;
+            margin-top: $spacing*0.2;
+            font-weight: 300;
+            font-style: italic;
+        }
+        .btn_cb {
+            @extend .btn;
+            width: fit-content;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) { 
+
+    .main_index {
+        /* Seccion explicacion: elemento padre */
+        .explicacion {
+            flex-direction: row;
+            width: 85vw;
+            margin: auto;
+            margin-top: $spacing*12;
+
+            /* Imágen explicación (círculos): elemento hijo */
+            img {
+                height: 300px;
+            }
+
+            /* Texto explicación: elemento hijo */
+            p {
+                font-size: 1.2rem;
+                line-height: 40px;
+                padding: 0px 60px 0px 80px; 
+            }
+        }
+
+        /* Section: como funciona nuestra pagina */
+        .cfns {
+            padding-top: $spacing*2;
+            padding-bottom: $spacing*2;
+
+            /* H2 de la seccion */
+            h2 {
+                font-size: 1.6rem ;
+                margin-bottom: $spacing*2;
+            }
+            video {
+                max-width: 40vw;
+            }
+        }
+
+        /* Section: comenzar busqueda */
+        .comenzar_busqueda {
+            padding-bottom: $spacing;
+
+            /* H2: estas listo */
+            h2 {
+                padding-top: $spacing;
+                font-size: 2rem;
+            }
+            /* H4: haz click aqui */
+            h4 {
+                font-size: 1rem;
+                font-weight: 300;
+                font-style: italic;
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 600px) {
+    video {
+        max-width: 50vw;
+    }
+}
