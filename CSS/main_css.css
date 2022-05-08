@@ -7850,8 +7850,12 @@ textarea.form-control-lg {
 
 nav {
   background-color: #d4d4d4;
-  text-align: center;
-  padding-bottom: 10px; }
+  text-align: start;
+  padding-bottom: 10px;
+  position: fixed !important;
+  width: 100%;
+  top: 0;
+  z-index: 1; }
   nav img {
     height: 50px; }
 
@@ -7866,6 +7870,7 @@ nav {
 header {
   text-align: center;
   padding-bottom: 10px;
+  margin-top: 100px;
   background-color: #7b2e2e; }
   header h1, header .h1 {
     color: #161616;
@@ -8069,3 +8074,94 @@ footer {
     flex-direction: column; }
     .main_index .explicacion img {
       margin-bottom: 15px; } }
+
+.header_mundo {
+  display: flex;
+  justify-content: center;
+  /* Foto mapa mundi */ }
+  .header_mundo img {
+    display: none;
+    filter: brightness(100%); }
+  .header_mundo ul {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 0px; }
+    .header_mundo ul li {
+      justify-items: center;
+      justify-content: center;
+      padding-top: 10px; }
+      .header_mundo ul li a {
+        text-decoration: none;
+        font-size: .8rem;
+        font-style: italic;
+        font-weight: 300;
+        color: black; }
+
+.main_mundo {
+  margin-bottom: 100px;
+  /* Bloque de cada pais */ }
+  .main_mundo .div_paises {
+    justify-content: center;
+    background-color: #e7e5e5;
+    margin-top: 100px;
+    padding: 20px;
+    /* Titulos de los paises */
+    /* parrafos de cada pais */ }
+    .main_mundo .div_paises h4, .main_mundo .div_paises .h4 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      padding-bottom: 10px;
+      padding-top: 10px; }
+    .main_mundo .div_paises p {
+      text-align: justify;
+      padding-bottom: 10px;
+      font-size: .8rem;
+      line-height: 22px; }
+    .main_mundo .div_paises .imagenes_platos {
+      align-self: center;
+      margin-bottom: 10px; }
+      .main_mundo .div_paises .imagenes_platos img {
+        max-width: 500px; }
+
+@media screen and (min-width: 769px) {
+  .header_mundo {
+    justify-content: end; }
+    .header_mundo ul {
+      justify-content: end;
+      align-self: center; }
+      .header_mundo ul li {
+        padding-top: 60px;
+        font-size: 1rem; }
+    .header_mundo img {
+      display: inline-block;
+      max-width: 700px;
+      padding-right: 10px;
+      animation-name: animacion-2;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-duration: 5s; }
+  @keyframes animacion-2 {
+    0% {
+      transform: translate(40px, 0px); }
+    25% {
+      transform: translate(-40px, 0px); }
+    75% {
+      transform: translate(40px, 0px); }
+    100% {
+      transform: translate(-40px, 0px); } }
+  .main_mundo {
+    margin-bottom: 200px; }
+    .main_mundo .div_paises {
+      background-color: #e7e5e5;
+      margin-top: 150px;
+      padding: 0px 100px 0px 100px; }
+      .main_mundo .div_paises h4, .main_mundo .div_paises .h4 {
+        font-size: 1.6rem; }
+      .main_mundo .div_paises p {
+        font-size: 1rem;
+        line-height: 25px;
+        padding-bottom: 10px; }
+      .main_mundo .div_paises .imagenes_platos {
+        flex-direction: row;
+        max-width: 50vw; } }

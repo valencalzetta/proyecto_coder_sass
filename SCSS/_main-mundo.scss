@@ -1,0 +1,131 @@
+.header_mundo {
+    display: flex;
+    justify-content: center;
+    /* Foto mapa mundi */
+    img{
+        display: none;
+        filter: brightness(100%)
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding: 0px;
+        li {
+            justify-items: center;
+            justify-content: center;
+            padding-top: $spacing;
+
+            a {
+                text-decoration: none;
+                font-size: .8rem;
+                font-style: italic;
+                font-weight: 300;
+                color: black;
+            }
+        }
+    }
+}
+
+.main_mundo {
+    margin-bottom: $spacing*10;
+
+    /* Bloque de cada pais */
+    .div_paises {
+        justify-content: center;
+        background-color: #e7e5e5;
+        margin-top: $spacing*10;
+        padding: $spacing*2;
+
+        /* Titulos de los paises */
+        h4 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            padding-bottom: $spacing;
+            padding-top: $spacing;
+        }
+        /* parrafos de cada pais */
+        p {
+            text-align: justify;
+            padding-bottom: 10px;
+            font-size: .8rem;
+            line-height: 22px;
+        }
+
+        .imagenes_platos {
+            align-self: center;
+            margin-bottom: $spacing;
+            img {
+                max-width: 500px;
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .header_mundo {
+        justify-content: end;
+
+        ul {
+            justify-content: end;
+            align-self: center; 
+            li {
+                padding-top: $spacing*6;
+                font-size: 1rem;
+            }
+        }
+        
+        img {
+            display: inline-block;
+            max-width: 700px;
+            padding-right: $spacing;
+            animation-name: animacion-2; 
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-duration: 5s;
+
+            @keyframes animacion-2 {
+                0% { 
+                    transform: translate(40px, 0px);   
+                }
+                25% { 
+                    transform: translate(-40px, 0px);
+                }
+                75% {
+                    transform: translate(40px, 0px);
+                }   
+                100% { 
+                    transform: translate(-40px, 0px);
+                }
+            } 
+        } 
+    }
+
+    .main_mundo {
+        margin-bottom: 200px;
+
+        
+        .div_paises {
+            background-color: #e7e5e5;
+            margin-top: $spacing*15;
+            padding: 0px 100px 0px 100px;
+
+            h4 {
+                font-size: 1.6rem;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 25px;
+                padding-bottom: 10px;
+            }
+            .imagenes_platos {
+                flex-direction: row;
+                max-width: 50vw;
+            }
+        }
+            
+    }
+}
+
+
