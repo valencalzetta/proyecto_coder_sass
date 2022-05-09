@@ -8297,3 +8297,48 @@ footer {
         margin: 10px 10px 10px 10px; }
         .main_nosotros .row_nosotros .div_personas ul {
           font-size: 1rem; } }
+
+.contenedor_preguntasf {
+  margin-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  /* Contenedor de cada pregunta */ }
+  .contenedor_preguntasf .div_pregunta {
+    padding: 15px 10px 15px 10px;
+    margin-top: 20px;
+    /* Cada pregunta */
+    /* Cada respuesta */ }
+    .contenedor_preguntasf .div_pregunta h4, .contenedor_preguntasf .div_pregunta .h4 {
+      font-size: .9rem;
+      font-weight: 500;
+      padding-bottom: 3px; }
+    .contenedor_preguntasf .div_pregunta p {
+      text-align: justify;
+      font-size: .8rem; }
+
+/* Div: insertar preguntas */
+.insertar_preguntas {
+  background-color: #7b2e2e;
+  margin-top: 50px;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 100px; }
+  .insertar_preguntas p {
+    font-size: .96rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 5px; }
+  .insertar_preguntas #button-addon2 {
+    animation: none; }
+
+@media screen and (min-width: 769px) {
+  .contenedor_preguntasf .row_nosotros .div_pregunta {
+    background-color: #e7e5e5b9;
+    margin-top: 80px;
+    margin: 10px 10px 10px 10px; }
+    .contenedor_preguntasf .row_nosotros .div_pregunta h4, .contenedor_preguntasf .row_nosotros .div_pregunta .h4 {
+      font-size: 1.2rem; }
+  .insertar_preguntas p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 10px; } }

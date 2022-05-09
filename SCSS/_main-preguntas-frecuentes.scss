@@ -1,0 +1,65 @@
+.contenedor_preguntasf {
+    margin-top: $spacing*5;
+    padding-left: $spacing*3;
+    padding-right: $spacing*3;
+
+    /* Contenedor de cada pregunta */
+    .div_pregunta {
+        padding: 15px 10px 15px 10px;
+        margin-top: $spacing*2;
+
+        /* Cada pregunta */
+        h4 {
+            font-size: .9rem;
+            font-weight: 500;
+            padding-bottom: $spacing*0.3;
+        }
+
+        /* Cada respuesta */
+        p {
+            text-align: justify;
+            font-size: .8rem;
+        }
+    }
+}
+
+/* Div: insertar preguntas */
+.insertar_preguntas {
+    background-color: $color-bordo;
+    margin-top: $spacing*5;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: $spacing*10;
+    p {
+        font-size: .96rem;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: $spacing/2;
+    }
+    #button-addon2 {
+        animation: none;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    .contenedor_preguntasf {
+        .row_nosotros {
+            .div_pregunta {
+                background-color: #e7e5e5b9;
+                margin-top: $spacing*8;
+                margin: 10px 10px 10px 10px;
+                h4 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .insertar_preguntas {
+        p {
+            font-size: 1.3rem;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: $spacing; 
+        }
+    }
+}
