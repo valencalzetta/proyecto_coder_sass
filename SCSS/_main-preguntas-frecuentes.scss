@@ -2,8 +2,7 @@
     margin-top: $spacing*5;
     padding-left: $spacing*3;
     padding-right: $spacing*3;
-
-    /* Contenedor de cada pregunta */
+     /* Contenedor de cada pregunta */
     .div_pregunta {
         padding: 15px 10px 15px 10px;
         margin-top: $spacing*2;
@@ -22,6 +21,8 @@
         }
     }
 }
+    
+
 
 /* Div: insertar preguntas */
 .insertar_preguntas {
@@ -44,6 +45,8 @@
 @media screen and (min-width: 769px) {
     .contenedor_preguntasf {
         .row_nosotros {
+            flex-wrap: nowrap !important;
+            justify-content: center;
             .div_pregunta {
                 background-color: #e7e5e5b9;
                 margin-top: $spacing*8;
