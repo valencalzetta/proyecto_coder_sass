@@ -8248,3 +8248,52 @@ footer {
       .main_mundo .div_paises .imagenes_platos {
         flex-direction: row;
         max-width: 50vw; } }
+
+.header_nosotros p {
+  font-size: .9rem;
+  margin-top: 10px;
+  font-style: italic;
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.main_nosotros {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  /* bloque cada persona */ }
+  .main_nosotros .div_personas {
+    display: flex;
+    justify-content: start;
+    margin-top: 30px;
+    padding: 10px 15px 10px 15px;
+    background-color: #bbb9b9d6;
+    margin-bottom: 10px;
+    /* lista datos de cada persona */
+    /* foto de cada persona */ }
+    .main_nosotros .div_personas ul {
+      font-size: .7rem; }
+      .main_nosotros .div_personas ul li span {
+        font-weight: 500;
+        font-style: italic; }
+    .main_nosotros .div_personas img {
+      height: 80px;
+      width: fit-content;
+      padding-right: 10px;
+      align-self: center; }
+
+@media screen and (min-width: 769px) {
+  .header_nosotros p {
+    font-size: 1.2rem;
+    padding-left: 30vw; }
+  .main_nosotros {
+    margin-top: 80px;
+    margin-bottom: 200px; }
+    .main_nosotros .row_nosotros {
+      flex-wrap: nowrap !important;
+      justify-content: center;
+      /* bloque cada persona */ }
+      .main_nosotros .row_nosotros .div_personas {
+        padding: 15px 15px 15px 15px;
+        margin: 10px 10px 10px 10px; }
+        .main_nosotros .row_nosotros .div_personas ul {
+          font-size: 1rem; } }
