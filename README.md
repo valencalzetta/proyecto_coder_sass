@@ -5,3 +5,5 @@
 3. Se agrega mixin de cada animacion
 4. Se agrega mapa para las animaciones con condicional (segun cual animacion corresponda la clase) y sus respectivos mixins. 
 5. Se borran las animaciones de los demás archivos .scss
+6. Se agrega tag <meta> (description y keywords) en todos los HTMLS
+7. Se agrega favicon a todos los HTMLS
