@@ -46,8 +46,7 @@
         }
         /* parrafos de cada pais */
         p {
-            text-align: justify;
-            padding-bottom: 10px;
+            @include parrafo-centrado;
             font-size: .8rem;
             line-height: 22px;
         }
@@ -80,25 +79,6 @@
             display: inline-block;
             max-width: 700px;
             padding-right: $spacing;
-            animation-name: animacion-2; 
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            animation-duration: 5s;
-
-            @keyframes animacion-2 {
-                0% { 
-                    transform: translate(40px, 0px);   
-                }
-                25% { 
-                    transform: translate(-40px, 0px);
-                }
-                75% {
-                    transform: translate(40px, 0px);
-                }   
-                100% { 
-                    transform: translate(-40px, 0px);
-                }
-            } 
         } 
     }
 
@@ -117,7 +97,6 @@
             p {
                 font-size: 1rem;
                 line-height: 25px;
-                padding-bottom: 10px;
             }
             .imagenes_platos {
                 flex-direction: row;
