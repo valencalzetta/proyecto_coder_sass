@@ -1,14 +1,18 @@
+// variables de tamaño:
 $font-size: 10px;
 $spacing: 10px;
+
+// variables de color:
 $color-blanco-claro: #e7e5e5;
 $color-blanco-oscuro: #d4d4d4;
 $color-bordo:#7b2e2e;
 $color-negrito: #161616;
 
+// listas:
 $lista-animaciones: 1, 2;
 
+// mixin general:
 @mixin parrafo-centrado {
     text-align: justify;
     padding: 10px 20px 10px 20px;
-
 }

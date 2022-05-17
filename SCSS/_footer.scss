@@ -4,12 +4,13 @@ footer {
     background-color:#7b2e2e;
     text-align: center;
     padding-bottom: $spacing;
-
+    // texto del footer
     p {
-        color: black;
-        font-size: .7rem ;
+        color: rgb(56, 55, 55);
+        font-size: .8rem;
+        padding-top: $spacing;
     }
-
+    // iconos
     img {
         height: 30px;
         padding-left: $spacing/2;
@@ -25,7 +26,8 @@ footer {
 
         img {
             height: 40px;
-            padding-left: 10px;
+            padding-left: $spacing*1.5;
+            padding-right: $spacing*1.5;
         }
     }
 }

@@ -6,6 +6,7 @@
         display: none;
         filter: brightness(100%)
     }
+    // lista de paises
     ul {
         display: flex;
         flex-direction: column;
@@ -65,7 +66,7 @@
 @media screen and (min-width: 769px) {
     .header_mundo {
         justify-content: end;
-
+        // lista de paises
         ul {
             justify-content: end;
             align-self: center; 
@@ -84,8 +85,6 @@
 
     .main_mundo {
         margin-bottom: 200px;
-
-        
         .div_paises {
             background-color: #e7e5e5;
             margin-top: $spacing*15;
