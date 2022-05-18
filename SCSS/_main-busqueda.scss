@@ -41,8 +41,8 @@
                     padding: $spacing;
                 }
             }
-            
             }
+
         tbody {
             tr {
                 td {
@@ -50,6 +50,17 @@
                     padding: $spacing;
                     text-align: center;
                     font-size: .8rem;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        &:hover {
+                            color: gray;
+                        }
+                    }
+                    .texto-clarito {
+                        color: $color-blanco-oscuro;
+                    }
+                    
                 }
             }
         }

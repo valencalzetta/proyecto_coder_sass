@@ -6550,6 +6550,13 @@ footer {
     padding: 10px;
     text-align: center;
     font-size: .8rem; }
+    .contenedor_busqueda table tbody tr td a {
+      text-decoration: none;
+      color: black; }
+      .contenedor_busqueda table tbody tr td a:hover {
+        color: gray; }
+    .contenedor_busqueda table tbody tr td .texto-clarito {
+      color: #d4d4d4; }
 
 /* Boton enviar */
 .div_btn_enviar {
