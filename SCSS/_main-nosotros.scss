@@ -1,17 +1,36 @@
-.header_nosotros {
-    p {
-        font-size: .9rem;
-        margin-top: $spacing;
-        font-style: italic;
-        font-weight: 300;
-        padding-left: $spacing;
-        padding-right: $spacing;
-    }
-}
+
 
 .main_nosotros {
     margin-top: $spacing*5;
     margin-bottom: $spacing*8;
+
+    .caracteristicas_nosotros {
+        display: grid;
+        grid-template-areas: 
+        "motivacion organizacion"
+        "compromiso objetivos_comunes";
+        align-content: center;
+        justify-content: space-around;
+        margin-top: $spacing*10;
+        margin-bottom: $spacing*6;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: $spacing*2;
+            img {
+                height: 130px;
+                padding-bottom: $spacing;
+            }
+            p {
+                color: $color-bordo;
+                font-size: 1.1rem;
+                font-weight: 450;
+            }
+        }
+    } 
+    
+
     /* bloque cada persona */
     .div_personas {
         display: flex;
@@ -39,21 +58,40 @@
             padding-right: $spacing;
             align-self: center;
         }
-        
+    }
 
+    .sumate {
+        padding: $spacing;
+        margin-top: $spacing*6;
+        p {
+          text-align: center;
+          font-size: 1.1rem; 
+          line-height: 25px;
+        }
+        .form-nosotros {
+            display: flex;
+            flex-direction: column;
+            div {
+                margin-bottom: $spacing;
+            }
+        }
     }
 }
 
-@media screen and (min-width: 769px) {
-    .header_nosotros {
-        p {
-            font-size: 1.2rem;
-            padding-left: 30vw;
-        }
-    }
+@media screen and (min-width: 768px) {
+
     .main_nosotros {
         margin-top: $spacing*8;
         margin-bottom: $spacing*20;
+
+        .caracteristicas_nosotros {
+            grid-template-areas: 
+            "motivacion organizacion compromiso objetivos_comunes";
+            justify-content: space-around;
+            div {
+                justify-items: space-around;
+            }
+        }
 
         .row_nosotros {
             flex-wrap: nowrap !important;
@@ -68,5 +106,31 @@
                 }
             }
         }
+        
+        .sumate {
+            max-width: 768px;
+            margin-right: auto;        
+            margin-left: auto;  
+            p {
+                font-size: 1.5rem;
+                line-height: 30px;
+           }      
+        }
     }
+}
+
+.motivacion {
+    grid-area: "motivacion";
+}
+
+.organizacion {
+    grid-area: "organizacion";
+}
+
+.compromiso {
+    grid-area: "compromiso";
+}
+
+.objetivos-comunes {
+    grid-area: "objetivos-comunes";
 }

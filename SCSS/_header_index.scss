@@ -1,0 +1,52 @@
+.header-index {
+    @include header-general;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    h1 {
+        @include h1-general;
+        font-size: 2.8rem;
+        margin-bottom: $spacing*2;
+    }
+    h4 {
+        @include h4-general;
+        font-size: 1rem;
+        padding-left: 0%;
+        line-height: 30px;
+     }
+    #carousel_index {
+        max-width: 425px;
+        img {
+            filter: brightness(40%);
+        }
+    }
+     
+}
+
+@media screen and (min-width: 769px) {
+    .header-index {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            text-align: left;
+            margin-top: 0;
+        }
+        h4 {
+            text-align: left;
+            font-size: 1.2rem;
+        }
+        #carousel_index {
+            max-width: 40vw;
+            margin-top: $spacing;
+            max-height: 480px;
+        img {
+            filter: brightness(40%);
+        }
+    }
+    }
+}

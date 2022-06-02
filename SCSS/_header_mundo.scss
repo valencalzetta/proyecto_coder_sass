@@ -1,0 +1,69 @@
+.header_mundo {
+    @include header-general;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        @include h1-general;
+    }
+    /* Foto mapa mundi */
+    img{
+        display: inline-block;
+        filter: brightness(100%);
+        max-width: 75vw;
+    }
+    // lista de paises
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding: 0px;
+        li {
+            justify-items: center;
+            justify-content: center;
+            padding-top: $spacing;
+
+            a {
+                text-decoration: none;
+                font-size: .8rem;
+                font-style: italic;
+                font-weight: 300;
+                color: $color-blanco-claro;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    .header_mundo {
+        flex-direction: row;
+        justify-content: space-around;
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 300;
+        }
+
+        // lista de paises
+        ul {
+            align-items: flex-end;
+            li {
+                padding-top: $spacing*6;
+                a {
+                font-size: 1rem;
+                color: $color-blanco-claro;
+                    &:hover {
+                        color: $color-blanco-oscuro;
+                    }
+                }
+            }
+        }
+        img {
+            display: inline-block;
+            max-width: 50vw;
+            padding-right: $spacing;
+            margin-top: $spacing*2.5;
+        } 
+    }
+}

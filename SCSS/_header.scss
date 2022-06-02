@@ -1,52 +1,64 @@
-header {
+
+
+@mixin header-general {
     text-align: center;
     padding-bottom: $spacing;
     margin-top: $spacing*10;
     background-color: $color-bordo;
+   
+}
+
+@mixin h1-general {
+    font-size: 2rem;
+    font-weight: 150;
+    padding-top: $spacing*2; 
+    line-height: 30px;   
+    color: $color-blanco-claro;  
+}
+
+@mixin h4-general {
+    color: $color-blanco-claro;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: $spacing*0.2; 
+    padding-bottom: $spacing*0.5;  
+    padding-right: $spacing*2;   
+    padding-left: $spacing*2;   
+}
+
+
+.header-2 {
+    @include header-general;
     h1 {
-        color: $color-negrito;
-        font-size: 1.5rem;
-        font-weight: 200;
-        margin-top: $spacing*5;
-        padding-top: $spacing*2; 
-        line-height: 25px;  
-    }
-    #titulo_index {
-        font-size: 2rem;
-        margin-bottom: $spacing*0.8;
-        padding-top: $spacing*2;
+        @include h1-general;
     }
     h4 {
-        color: rgb(36, 33, 33);
-        font-style: italic;
-        font-size: .8rem;
-        font-weight: 400;
-        padding-top: $spacing*0.2; 
-        padding-bottom: $spacing*0.5;     
+       @include h4-general; 
     }
     img {
         display: none;
     }
 }
 
+
+
+
 @media screen and (min-width: 769px) {
-    header{
-        text-align: right;
-        padding-right: 15vh;
+    .header-2{
         margin-top: $spacing*8;
 
         h1 {
+
             font-size: 2rem;
             font-weight: 400;
             padding: 10px;
         }
-        #titulo_index {
-            font-size: 3rem;
-            font-weight: 300;
-        }
         h4 {
+            @include h4-general;
             font-size: 1.3rem;
-            font-weight: 500;
+            padding-right: 10vw;
+            padding-left: 10vw;
         }
         img {
             display: inline-block;
@@ -56,3 +68,4 @@ header {
         }
     }  
 }
+
