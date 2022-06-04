@@ -1,11 +1,14 @@
-.btn {
-    color: black;
+.btn-css {
+    color: $color-blanco-claro;
     background-color: #7b2e2e;
     margin-top: $spacing*0.3;
+    &:hover {
+        color: $color-negrito;
+    }
 }
 
 @media screen  and (min-width: 769px){
-    .btn {
+    .btn-css {
         font-size: 2rem;
         padding: 10px 10px 10px 10px;
         border-style: ridge;

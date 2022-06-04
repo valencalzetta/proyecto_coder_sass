@@ -13,7 +13,8 @@
     h4 {
         @include h4-general;
         font-size: 1rem;
-        padding-left: 0%;
+        padding-left: $spacing;
+        padding-right: $spacing;
         line-height: 30px;
      }
     #carousel_index {
@@ -39,6 +40,8 @@
         h4 {
             text-align: left;
             font-size: 1.2rem;
+            padding-left: 0;
+            padding-right: 0;
         }
         #carousel_index {
             max-width: 40vw;

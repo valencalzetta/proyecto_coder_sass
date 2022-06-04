@@ -44,8 +44,10 @@
             margin-bottom: 10px;
             text-align: center;
         }
-        video {
-            max-width: 80vw;
+
+        iframe {
+            width: 280px;
+            height: 157.5px;
         }
     }
 
@@ -56,13 +58,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: $spacing*10;
+        margin-bottom: $spacing*5;
 
         /* H2: estas listo */
         h2 {
             text-align: center;
             margin-bottom: $spacing*0.2;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: 350;
         }
 
@@ -75,12 +77,53 @@
             font-style: italic;
         }
         .btn_cb {
-            @extend .btn;
+            @extend .btn-css;
             width: fit-content;
             color: $color-blanco-claro;
         }
     }
+
+    .section-imperdibles {
+        display: flex;
+        flex-direction: column;
+        .p-section-imperdibles {
+            text-align: center;
+            font-size: 1.1rem;
+            padding-bottom: $spacing*2;
+            color: $color-bordo;
+        }
+        .restaurantes-imperdibles {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: $spacing*5;
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: $spacing*5;
+                .img-restaurantes {
+                    height: $spacing*25;
+                }
+                p {
+                    font-size: .9rem;
+                    margin-bottom: 0px;
+                }
+                .p-strong {
+                    font-size: 1rem;
+                    padding-top: $spacing;
+                    margin-bottom: 0%;
+                }
+                .img-logo {
+                    height: $spacing*4;
+                }
+            }
+            
+        }
+            
+    }
 }
+
 
 @media screen and (min-width: 769px) { 
 
@@ -115,8 +158,9 @@
                 font-size: 1.6rem ;
                 margin-bottom: $spacing*2;
             }
-            video {
-                max-width: 40vw;
+            iframe {
+                width: 560px;
+                height: 315px;
             }
         }
 
@@ -136,14 +180,43 @@
                 font-style: italic;
             }
         }
+
+        // seccion lugares gastronomicos imperdibles
+        .section-imperdibles {
+            .p-section-imperdibles {
+                font-size: 1.5rem;
+            }
+            .restaurantes-imperdibles {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly; 
+                margin-bottom: $spacing*5;
+                div {
+                    .img-restaurantes {
+                        height: $spacing*25;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                        margin-bottom: 0px;
+                        color: $color-negrito;
+                    }
+                    .p-strong {
+                        font-size: 1.3rem;
+                        padding-top: $spacing;
+                        margin-bottom: 0%;
+                        color: black;
+                    }
+                    .img-logo {
+                        height: $spacing*4;
+                    }
+                }
+                
+            }
+                
+        }
     }
     
-}
-
-@media screen and (min-width: 600px) {
-    video {
-        max-width: 50vw;
-    }
+    
 }
 
 @media screen and (max-width: 1124px)  {

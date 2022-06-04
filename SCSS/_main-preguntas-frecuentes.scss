@@ -63,10 +63,16 @@
     }
     .insertar_preguntas {
         p {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             font-weight: 400;
             font-style: italic;
             margin-bottom: $spacing; 
+        }
+        input {
+            height: $spacing*4;
+        }
+        button {
+            height: $spacing*4;
         }
     }
 }
